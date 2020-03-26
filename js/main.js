@@ -1,12 +1,12 @@
 // Recupero i km da percorrere
 
 var distanza = parseInt(prompt('Quanti km dovrai percorrere ?'));
-console.log(distanza);
+console.log("Percorrerai " + distanza + " km");
 
 // recupero gli anni del cliente
 
 var infoPasseggero = parseInt(prompt('Quanti anni hai ?'));
-console.log(infoPasseggero);
+console.log("Hai " + infoPasseggero + " anni");
 
 // costo del biglietto
 
@@ -30,11 +30,11 @@ var scontoFinale40 = prezzoInt - sconto40;
 // condizione per lo sconto
 
 if (infoPasseggero < 18) {
-    console.log("E stato applicato uno sconto del 20% per gli under 18 " + scontoFinale20);
+    document.getElementById('acquisto').innerHTML = "E stato applicato uno sconto del 20% per gli under 18, quindi il prezzo del tuo biglietto sara " + scontoFinale20.toFixed(2) + " $";
 
 } else if (infoPasseggero >= 65) {
-    console.log("E stato applicato uno sconto del 40% per gli over 65 " + scontoFinale40);
+    document.getElementById('acquisto').innerHTML = "E stato applicato uno sconto del 40% per gli over 65, quindi il prezzo del tuo biglietto sara " + scontoFinale20.toFixed(2) + " $";
 
 } else {
-    console.log("Pagherai il prezzo intero del biglietto " + prezzoInt);
+    document.getElementById('acquisto').innerHTML = "Non e stato possibile applicare sconti al tuo biglietto, quindi pagherai " + scontoFinale20.toFixed(2) + " $";
 }
