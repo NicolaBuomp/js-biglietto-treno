@@ -30,11 +30,11 @@ var scontoFinale40 = prezzoInt - sconto40;
 // condizione per lo sconto
 
 if (infoPasseggero < 18) {
-    document.getElementById('acquisto').innerHTML = "E stato applicato uno sconto del 20% per gli under 18, quindi il prezzo del tuo biglietto sara " + scontoFinale20.toFixed(2) + " $";
+    document.getElementById('acquisto').innerHTML = "E' stato applicato uno sconto del 20% per gli under 18, pagherai " + scontoFinale20.toFixed(2) + " $";
 
 } else if (infoPasseggero >= 65) {
-    document.getElementById('acquisto').innerHTML = "E stato applicato uno sconto del 40% per gli over 65, quindi il prezzo del tuo biglietto sara " + scontoFinale20.toFixed(2) + " $";
+    document.getElementById('acquisto').innerHTML = "E' stato applicato uno sconto del 40% per gli over 65, pagherai " + scontoFinale20.toFixed(2) + " $";
 
 } else {
-    document.getElementById('acquisto').innerHTML = "Non e stato possibile applicare sconti al tuo biglietto, quindi pagherai " + scontoFinale20.toFixed(2) + " $";
+    document.getElementById('acquisto').innerHTML = "Non e' stato possibile applicare sconti al tuo biglietto, pagherai " + scontoFinale20.toFixed(2) + " $";
 }
